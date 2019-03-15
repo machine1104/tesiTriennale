@@ -1,0 +1,93 @@
+\documentclass[Lau,noexaminfo,oneside,binding=0.6cm]{sapthesis}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{multicol,caption}
+\usepackage[bottom]{footmisc}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\graphicspath{ {images/} }
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\courseorganizer{Sapienza Università di Roma }
+\advisor{Prof. Andrea Vitaletti}
+\course{Ingegneria Informatica}
+\IDnumber{1649359}
+\submitdate{2018/2019}
+\copyyear{2019}
+\authoremail{edo.puglisi95@gmail.com}
+\author{Edoardo Puglisi}
+\title{MoveMate - ride pooling da studenti per studenti}
+\subtitle{Metodologia Agile per lo sviluppo di applicazioni}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\dedication{Alla mia famiglia e alla Compagnia dell'Anello} 
+
+\include{intro}
+
+\mainmatter
+
+\begin{acknowledgments}
+Vorrei ringraziare il prof. Andrea Vitaletti che mi ha consigliato e spronato a dare il massimo durante tutto il periodo di lavoro su questo progetto. Senza di Lei non avrei mai potuto partecipare a questa fantastica esperienza.
+Ringrazio i miei colleghi, passati e presenti, con cui ho condiviso gioie e dolori dell'università.
+Un ringraziamento particolare ai miei genitori per il sostegno e la pazienza.
+Infine ringrazio i miei migliori amici, sempre pronti a festeggiare o consolarmi dopo ogni esame, e la mia amica Lucia per il suo prezioso aiuto.
+\end{acknowledgments}
+
+\tableofcontents
+
+\include{agile}
+\include{fase-iniziale}
+\include{progettazione}
+\include{tecnologie}
+\include{android}
+\include{sviluppo}
+\include{conclusione}
+
+\end{document}
